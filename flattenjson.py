@@ -12,6 +12,7 @@ list_endorsed = []
 list_course_id = []
 count = 0
 threads_dict = {'thread_id': list_id, 'text': list_text, 'endorsed': list_endorsed, 'course_id' : list_course_id}
+
 for thread in collection.find():
     count += 1
     print(count)
@@ -23,5 +24,3 @@ for thread in collection.find():
         list_endorsed.append(flatten_thread["content_endorsed"])
     else : 
         break
-
-
