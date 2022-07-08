@@ -3,3 +3,4 @@ pandas
 requests
 vaderSentiment_fr
 pymongo
+python-Levenshtein
