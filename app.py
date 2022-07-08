@@ -19,6 +19,10 @@ threads_dict = {'thread_id': list_id, 'text': list_text, 'endorsed': list_endors
 
 app = Flask(__name__)
 
+@app.route("/test")
+def test():
+    return "OK !"
+
 @app.route("/")
 def hello_world():
 
