@@ -1,6 +1,7 @@
 import sys, os, json
-from pymongo import MongoClient
 from flask import Flask, jsonify, render_template, request
+'''
+from pymongo import MongoClient
 from function_flatten import flatten_json, extract_key_from_flatten_thread
 from vaderSentiment_fr.vaderSentiment import SentimentIntensityAnalyzer
 
@@ -16,7 +17,7 @@ list_endorsed = []
 list_course_id = []
 count = 0
 threads_dict = {'thread_id': list_id, 'text': list_text, 'endorsed': list_endorsed, 'course_id' : list_course_id}
-
+'''
 app = Flask(__name__)
 
 @app.route("/test")
